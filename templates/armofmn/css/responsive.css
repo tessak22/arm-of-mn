@@ -67,6 +67,7 @@
 	.featured-project {display: none;}
 	.homepage-content {margin-top: 20px;}
 	.navbar-default .navbar-toggle {top: -45px;}
+	.responsive-only {display: block;}
 }
 
 @media only screen and (max-width: 400px) {
