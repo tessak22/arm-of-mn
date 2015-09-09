@@ -108,10 +108,10 @@ hr {height: 2px;
 .home .page-title {display: none;}
 
 /*Homepage Only*/
-.slider-area {background: #fff url('../images/homepage-slider-bg.png') no-repeat; height: 530px;}
+.slider-area {background: #fff url('../images/homepage-slider-bg.png') no-repeat; height: 480px;}
 .slider-area .container {position: relative;}
-.homepage-slide {height: 530px; position: relative; left: -135px;}
-.homepage-slide p {font-size: 38px; color: #fff; line-height: 55px; text-shadow: 2px 3px 21px rgba(0, 0, 0, 0.65); max-width: 50%; position: relative; top: 200px; left: 135px;}
+.homepage-slide {height: 480px; position: relative; left: -135px;}
+.homepage-slide p {font-size: 38px; color: #fff; line-height: 55px; text-shadow: 2px 3px 21px rgba(0, 0, 0, 0.65); max-width: 50%; position: relative; top: 130px; left: 135px;}
 .featured-project {background: #fff; padding: 0px 20px; position: absolute; right: 0; top: 0; z-index: 10;}
 .featured-project img {max-width: 100%; height: auto; width: 100%;}
 .featured-project p {margin-top: 15px; margin-bottom: 15px; line-height: 20px;}
