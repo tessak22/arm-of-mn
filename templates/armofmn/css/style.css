@@ -358,7 +358,7 @@ background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
 .after-content form.form-inline .search:after {display: none;}
 .search-members .control-group {float: left;}
 .search-members .control-group .controls button.btn {margin-left: 10px;}
-.search-members .control-group:nth-child(3) {float: none; clear: both;}
+.search-members .control-group:nth-child(3) {float: none; clear: both; margin-top: 15px;}
 .search-members input#mod_mt_search_searchword0 {
   background-color: #ffffff;
   background-image: none;
