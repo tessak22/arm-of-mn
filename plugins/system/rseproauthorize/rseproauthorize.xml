@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>RSEvents!Pro Authorize payment</name>
+	<author>RSJoomla</author>
+	<creationDate>20.01.2011</creationDate>
+	<copyright>Copyright (C) 2012 RSJoomla.com. All rights reserved.</copyright>
+	<license>GPLv2.0</license>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>RSEvents!Pro Authorize plugin. &lt;font color="red"&gt;Make sure you publish the plugin first!&lt;/font&gt;</description>
+	
+	<files>
+		<filename plugin="rseproauthorize">rseproauthorize.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_rseproauthorize.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="text" name="id" default="" value="" size="55" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_ID" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_ID_DESC"/>
+				<field type="text" name="key" default="" value="" size="55" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_KEY" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_KEY_DESC"/>
+				<field name="mode" type="radio" class="btn-group" default="0" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_MODE" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_MODE_DESC">
+					<option value="0">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_MODE_TEST</option>
+					<option value="1">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_MODE_LIVE</option>
+				</field>
+				<field name="ssl" type="radio" class="btn-group" default="0" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_SSL" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_SSL_DESC">
+					<option value="0">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_NO</option>
+					<option value="1">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_YES</option>
+				</field>
+				<field name="tax_type" type="radio" class="btn-group" default="0" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_TYPE" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_TYPE_DESC">
+					<option value="0">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_FIXED</option>
+					<option value="1">COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_PERCENT</option>
+				</field>
+				<field type="text" name="tax_value" default="0" value="" cols="55" rows="10" label="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_VALUE" description="COM_RSEVENTSPRO_PLG_PLUGIN_AUTHORIZE_TAX_VALUE_DESC"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

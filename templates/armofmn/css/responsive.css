@@ -1,0 +1,74 @@
+@media only screen and (max-width: 1199px) {
+	.navbar-default .navbar-nav > li > a {padding: 0 15px 17px;}
+	.menu-bar .navbar-nav > li > a {padding: 6px 60px;}
+	.featured-project p {word-wrap: break-word;}
+	.bye-bye img {max-width: 100%; height: auto;}
+	.copyright {float: left; padding-top: 10px;}
+	.copyright p {text-align: left;}
+	.homepage-slide {left: 0;}
+}
+
+@media only screen and (max-width: 991px) {
+	.navbar-default .navbar-nav > li > a {padding: 0 7px 17px; font-size: 15px;}
+	.navbar-default .navbar-nav > li > a:after {display: none;}
+	.slider-area .container {width: 100%; padding-right: 0;}
+	.featured-project {max-width: 750px; position: relative; margin: 0 auto;}
+	.featured-project p img {float: left; width: 50%; padding-right: 35px;}
+	.menu-bar {bottom: auto; top: 0; margin-bottom: 15px;}
+	.menu-bar .container {max-width: 750px; margin: 0 auto;}
+	.feature1, .feature2 {clear: both; margin-bottom: 15px; overflow: hidden;}
+	.feature3 p {clear: both;}
+	.footer-features p.btn.btn-primary {width: 95%;}
+	.homepage-content .upcoming-events, .homepage-content .custom-content, .homepage-content .bye-bye {margin-bottom: 20px;}
+	.slider-area {background: #fff url("../images/homepage-slider-bg.jpg") no-repeat; height: 100%;}
+	.dropdown-menu:before {display: none;}
+	.homepage-slide {height: 470px;}
+	.page-title .random-image {display: none;}
+	.page-title {background: #a7a095;}
+	.sidebar .custom.bye-bye-potholes, .sidebar .custom.associate-ad, .sidebar > .upcoming-events-sidebar {box-shadow: none;}
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-nav > li > .dropdown-menu {display: block; float: none; position: relative; box-shadow: none; border: none;}
+	.navbar-collapse {overflow: hidden;}
+	.navbar-default .navbar-nav > li > a, .site-header .navbar-nav > li:first-child > a {padding: 15px 0px 0 20px;}
+	.homepage-slide p {max-width: 75%; top: 150px;}
+	.menu-bar .navbar-nav > li > a, .footer-menu .navbar-nav > li > a {border-right: none;}
+	.logos .col-sm-2 {width: 16.6667%; float: left;}
+	.footer-menu .navbar-nav > li:first-child > a {padding-left: 10px;}
+	.menu-bar .container, .featured-project {max-width: 100%; padding-left: 15px; padding-right: 15px;}
+	.logo, .top-right {max-width: 50%; float: left;}
+	.navbar-default {padding-top: 0;}
+	.menu-bar .navbar-nav > li > a {float: left;}
+	.dropdown-menu {width: 100%; background: transparent; left: 40px;}
+	.dropdown-menu:before {display: none;}
+	.dropdown-menu > li > a {color: #504D47; text-align: left; padding: 6px 0;}
+	.dropdown-menu > li > a:hover {color: #50588c;}
+	.dropdown-menu > li:after {display: none;}
+	.navbar-default .navbar-toggle {position: absolute; top: -55px; right: 0;}
+	.top-right .search {display: none;}
+	.top-right {padding-right: 110px;}
+	.navbar {min-height: 20px;}
+	.alpha-index {display: none;}
+	.main-content td.map, .main-content td.contact-us-left {width: 100% !important;}
+	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {margin-left: 0; float: left;}
+}
+
+@media only screen and (max-width: 480px) {
+	.logo {max-width: 75%;}
+	.top-right {display: none;}
+	.homepage-slide p {left: 0; max-width: 100%; top: 100px;}
+	.menu-bar .navbar-nav > li > a {float: none; text-align: center;}
+	.footer-features p.btn.btn-primary {width: 90%;}
+	.logos .col-sm-2 {width: 33%;}
+	.slider-area {display: none;}
+	.homepage-content {margin-top: 20px;}
+	.navbar-default .navbar-toggle {top: -45px;}
+}
+
+@media only screen and (max-width: 400px) {
+	.footer-features p.btn.btn-primary:after {display: none;}
+	.footer-features p.btn.btn-primary {background:transparent; padding: 0; text-align: left; white-space: normal; width: 100%; word-wrap: break-word;}
+	.footer-features p.btn.btn-primary:hover {background: transparent;}
+	.homepage-slide p {top: 150px; font-size: 30px; line-height: 36px;}
+}

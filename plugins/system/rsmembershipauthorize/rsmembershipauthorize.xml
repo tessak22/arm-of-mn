@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - RSMembership! - Authorize.Net</name>
+	<author>RSJoomla!</author>
+	<creationDate>February 2015</creationDate>
+	<copyright>(C) 2009-2015 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.3.2</version>
+	<scriptfile>script.php</scriptfile>
+	<description>PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_NET_PLUGIN_DESC</description>
+	<files>
+		<filename plugin="rsmembershipauthorize">rsmembershipauthorize.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+		<folder>rsmembershipauthorize</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_rsmembershipauthorize.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_rsmembershipauthorize.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field type="text" name="x_login" default="" class="input-xlarge" size="20" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_API_LOGIN" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_API_LOGIN_DESC"/>
+				<field type="text" name="x_tran_key" default="" class="input-xlarge" size="16" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_TRAN_KEY" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_TRAN_KEY_DESC"/>
+				<field name="mode" type="radio" default="0" class="btn-group" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_MODE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_MODE_DESC">
+					<option value="0">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_MODE_TEST</option>
+					<option value="1">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_MODE_LIVE</option>
+				</field>
+				<field name="tax_type" type="radio" default="0" class="btn-group" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_TYPE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_TYPE_DESC">
+					<option value="0">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_PERCENT</option>
+					<option value="1">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_FIXED</option>
+				</field>
+				<field type="text" name="tax_value" default="0" class="input-small" cols="55" rows="10" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_VALUE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_TAX_VALUE_DESC" />
+				<field name="message_type" type="radio" default="0" class="btn-group" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_MESSAGE_TYPE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_MESSAGE_TYPE_DESC">
+					<option value="0">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_MESSAGE_TYPE_PURCHASE</option>
+					<option value="1">PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_MESSAGE_TYPE_MEMBERSHIP</option>
+				</field>
+			</fieldset>
+			<fieldset name="advanced" addfieldpath="plugins/system/rsmembershipauthorize/fields">
+				<field type="text" name="payment_name" default="Credit Card" class="input-xlarge" size="20" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_PAYMENT_NAME" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_PAYMENT_NAME_DESC"/>
+				<field type="authorizedatamap" name="x_address" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_ADDRESS" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_state" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_STATE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_city" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_CITY" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_country" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_COUNTRY" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_zip" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_ZIP" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_phone" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_PHONE" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_fax" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_FAX" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+				<field type="authorizedatamap" name="x_company" label="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_COMPANY" description="PLG_SYSTEM_RSMEMBERSHIPAUTHORIZE_AUTHORIZE_DATA_MAP_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

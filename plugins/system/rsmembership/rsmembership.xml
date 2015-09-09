@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5.0" group="system" method="upgrade">
+	<name>System - RSMembership!</name>
+	<creationDate>March 2014</creationDate>
+	<author>RSJoomla!</author>
+	<copyright>(C) 2009-2014 www.rsjoomla.com</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license> 
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.0.0</version>
+	<description>COM_RSMEMBERSHIP_SYSTEM_PLUGIN_DESC</description>
+	<files>
+		<filename>index.html</filename>
+		<filename plugin="rsmembership">rsmembership.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_rsmembership.ini</language>
+	</languages>
+</extension>
