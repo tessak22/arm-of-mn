@@ -319,7 +319,7 @@ input#modlgn-remember {float: left;}
 #form-login-remember label {padding-left: 5px;}
 #login-form ul.unstyled {list-style-type: none; padding-left: 0; margin-top: 20px;}
 
-/*Random Image*/
+/*Random Image for Interior Banners*/
 .randbg {
 background: url('../../../images/interior-banners/interior-banner-1.jpg') no-repeat top center;
 /*-webkit-background-size: cover;
@@ -353,3 +353,7 @@ background-image: url('../../../images/interior-banners/interior-banner-8.jpg');
 .randbg.bg8 {
 background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
 }
+
+/*Search before Member List categories*/
+.after-content form.form-inline .search:after {display: none;}
+.search-members .control-group {float: left;}
