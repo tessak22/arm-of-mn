@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="user_id" type="user" class="input-large" label="COM_RSMEMBERSHIP_SUBSCRIBER_MEMBERSHIP_USER" description="COM_RSMEMBERSHIP_SUBSCRIBER_MEMBERSHIP_USER_DESC" />
+		<field name="membership_id" type="memberships" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP" description="COM_RSMEMBERSHIP_MEMBERSHIP_DESC" onchange="rsmembership_change_membership()"/>
+		<field name="extras" type="extravalues" size="7" class="input-xxlarge" label="COM_RSMEMBERSHIP_EXTRA" description="COM_RSMEMBERSHIP_EXTRA_DESC" onchange="rsmembership_calculate_price()" multiple="multiple" />
+		<field name="status" type="statuses" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_STATUS" description="COM_RSMEMBERSHIP_MEMBERSHIP_STATUS_DESC" />
+		<field name="membership_start" type="date" class="input-large" default="" label="COM_RSMEMBERSHIP_MEMBERSHIP_START" description="COM_RSMEMBERSHIP_MEMBERSHIP_START_DESC" />
+		<field name="membership_end" type="date" class="input-large" default="" label="COM_RSMEMBERSHIP_MEMBERSHIP_END" description="COM_RSMEMBERSHIP_MEMBERSHIP_END_DESC" />
+		<field name="unlimited" type="checkbox" value="1" onclick="rsmembership_change_unlimited();" label="COM_RSMEMBERSHIP_UNLIMITED" />
+		<field name="price" type="text" class="input-tiny" default="0" size="10" label="COM_RSMEMBERSHIP_MEMBERSHIP_PRICE" description="COM_RSMEMBERSHIP_MEMBERSHIP_PRICE_DESC" />
+		<field name="currency" type="text" class="input-tiny" size="10" label="COM_RSMEMBERSHIP_MEMBERSHIP_CURRENCY" description="COM_RSMEMBERSHIP_MEMBERSHIP_CURRENCY_DESC" />
+		<field name="notes" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_NOTES" description="COM_RSMEMBERSHIP_NOTES_DESC" filter="raw" buttons="true" width="70%" />
+		<field name="notified" type="hidden" default="0" />
+		<field name="id" type="hidden" default="0" />
+	</fieldset>
+</form>

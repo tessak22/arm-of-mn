@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_EXTRA_VALUE_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="name" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_EXTRA_VALUE" description="COM_RSMEMBERSHIP_EXTRA_VALUE_DESC"  size="200" required="required" />
+
+		<field name="sku" type="text" class="input-large" label="COM_RSMEMBERSHIP_EXTRA_VALUE_SKU" description="COM_RSMEMBERSHIP_EXTRA_VALUE_SKU_DESC"  size="100" />
+
+		<field name="description" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_EXTRA_VALUE_DESCRIPTION" description="COM_RSMEMBERSHIP_EXTRA_VALUE_DESCRIPTION_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" viewname="membership" />
+
+		<field name="price" type="text" class="input-large" default="0.00" label="COM_RSMEMBERSHIP_EXTRA_VALUE_PRICE" description="COM_RSMEMBERSHIP_EXTRA_VALUE_PRICE_DESC" size="20" />
+
+		<field name="checked" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_EXTRA_VALUE_CHECKED" description="COM_RSMEMBERSHIP_EXTRA_VALUE_CHECKED_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="extra_id" type="hidden" default="0" />
+
+		<field name="id" type="hidden" default="0" />
+	</fieldset>
+
+	<fieldset name="shared" label="COM_RSMEMBERSHIP_SHARED" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="share_redirect" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SHARE_REDIRECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SHARE_REDIRECT_DESC" size="20" />
+	</fieldset>
+</form>
+
+

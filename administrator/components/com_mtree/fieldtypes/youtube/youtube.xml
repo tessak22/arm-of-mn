@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+	<name>youtube</name>
+	<caption>Youtube</caption>
+	<author>Lee Cher Yeong</author>
+	<creationDate>July 2014</creationDate>
+	<copyright>(C) 2012-2014 Mosets Consulting. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>3.5.10</version>
+	<description>Show an embedded Youtube video player.</description>
+	<useElements>0</useElements>
+	<useSize>1</useSize>
+	<taggable>0</taggable>
+	<fileset>
+		<files folder="." target="administrator/components/com_mtree/fieldtypes/youtube">
+			<filename>youtube.php</filename>
+			<filename>youtube.xml</filename>
+			<filename>index.html</filename>
+		</files>
+	</fileset>
+	<config>
+		<fields>
+			<fieldset name="basic">
+				<field name="checkboxLabel" type="text" default="Contains video" label="Search's checkbox label" />
+
+				<field name="youtubeWidth" type="text" default="560" label="Video player's width." description="Leave empty for default." />
+				<field name="youtubeHeight" type="text" default="315" label="Video player's height." description="Leave empty for default." />
+                <field name="youtubeParameters" type="text" default="showinfo=0&amp;modestbranding=1&amp;controls=0&amp;rel=0" label="Parameters" description="Enter additional Youtube parameters, separated by comma. This allows you to control how Youtube is presented to your visitors. For more information ,go to: https://developers.google.com/youtube/player_parameters#Parameters" />
+                <field name="youtubeInputDescription" type="text" default="Enter the full URL of the Youtube video page.&lt;br /&gt;ie: &lt;b&gt;http://youtube.com/watch?v=OHpANlSG7OI&lt;/b&gt;" label="Youtube's Input description" />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension">http://update.mosets.com/mtree/fieldtypes/youtube.xml</server>
+	</updateservers>
+</extension>

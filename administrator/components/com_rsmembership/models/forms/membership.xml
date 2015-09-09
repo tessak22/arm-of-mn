@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="basic_info" type="spacer" label="COM_RSMEMBERSHIP_MEMBERSHIP_BASIC_INFO" />
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="name" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_NAME" description="COM_RSMEMBERSHIP_MEMBERSHIP_DESC"  size="200" required="required" />
+
+		<field name="category_id" type="sql" class="input-large" label="COM_RSMEMBERSHIP_CATEGORY" description="COM_RSMEMBERSHIP_MEMBERSHIP_CATEGORY_DETAILS"  query="SELECT id, name FROM #__rsmembership_categories" key_field="id" value_field="name">
+			<option value="0">COM_RSMEMBERSHIP_NO_CATEGORY</option>
+		</field>
+
+		<field name="sku" type="text" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_SKU" description="COM_RSMEMBERSHIP_MEMBERSHIP_SKU_DESC"  size="100" />
+
+		<field name="term_id" type="sql" class="input-large" label="COM_RSMEMBERSHIP_TERM" description="COM_RSMEMBERSHIP_TERM_DESC" query="SELECT id, name FROM #__rsmembership_terms" key_field="id" value_field="name">
+			<option value="0">COM_RSMEMBERSHIP_NO_TERMS</option>
+		</field>
+		
+		<field name="thumb" type="getimage" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_THUMB" description="COM_RSMEMBERSHIP_MEMBERSHIP_THUMB_DESC" />
+
+		<field name="thumb_w" type="hidden" />
+
+		<field name="thumb_resize" type="resize" default="100" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_THUMB_WIDTH" description="COM_RSMEMBERSHIP_MEMBERSHIP_THUMB_WIDTH_DESC" />
+
+		<field name="description" type="geteditor" class="inputbox" translate_default="true" default="COM_RSMEMBERSHIP_MEMBERSHIP_DESCRIPTION_DEFAULT" label="COM_RSMEMBERSHIP_MEMBERSHIP_DESCRIPTION" description="COM_RSMEMBERSHIP_MEMBERSHIP_DESCRIPTION_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" viewname="membership" />
+
+		<field name="id" type="hidden" default="0" />
+
+		<field name="one_time_price_settings" type="spacer" label="COM_RSMEMBERSHIP_MEMBERSHIP_ONE_TIME_PRICE_SETTINGS" description="COM_RSMEMBERSHIP_MEMBERSHIP_ONE_TIME_PRICE_SETTINGS_DESC" />
+
+		<field name="price" type="text" default="0" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_PRICE" description="COM_RSMEMBERSHIP_MEMBERSHIP_PRICE_DESC" size="20" />
+
+		<field name="use_renewal_price" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_USE_RENEWAL_PRICE" description="COM_RSMEMBERSHIP_MEMBERSHIP_USE_RENEWAL_PRICE_DESC" default="0" labelclass="control-label" onclick="rsm_enable_renewal_price(this.value)">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="renewal_price" type="text" default="0" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_RENEWAL_PRICE" description="COM_RSMEMBERSHIP_MEMBERSHIP_RENEWAL_PRICE_DESC" size="20" />
+
+		<field name="use_trial_period" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_USE_TRIAL_PERIOD" description="COM_RSMEMBERSHIP_MEMBERSHIP_USE_TRIAL_PERIOD_DESC" default="0" labelclass="control-label" onclick="rsm_enable_fixed_expiry(this);">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="trial_price" type="text" default="0" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_TRIAL_PRICE" description="COM_RSMEMBERSHIP_MEMBERSHIP_TRIAL_PRICE_DESC" size="20" />
+
+		<field name="recurring_settings" type="spacer" label="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING_PRICE_SETTINGS" description="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING_PRICE_SETTINGS_DESC" />
+
+		<field name="recurring" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING" description="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		
+		<field name="recurring_times" type="text" default="0" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING_TIMES" description="COM_RSMEMBERSHIP_MEMBERSHIP_RECURRING_TIMES_DESC" size="20" />
+
+		<field name="length_settings" type="spacer" label="COM_RSMEMBERSHIP_MEMBERSHIP_LENGTH_SETTINGS" />
+
+		<field name="period_values" type="periods" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_PERIOD" description="COM_RSMEMBERSHIP_MEMBERSHIP_PERIOD_DESC" />
+
+		<field name="trial_period_values" type="periods" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_TRIAL_PERIOD" description="COM_RSMEMBERSHIP_MEMBERSHIP_TRIAL_PERIOD_DESC" />
+
+		<field name="fixed_expiry_values" type="fixedexpiry" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRY_DATE" description="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRY_DATE_DESC" />
+
+		<field name="trial_settings" type="spacer" label="COM_RSMEMBERSHIP_MEMBERSHIP_TRIAL_SETTINGS" />
+		
+		<field name="unique" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_UNIQUE" description="COM_RSMEMBERSHIP_MEMBERSHIP_UNIQUE_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	
+		<field name="no_renew" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_NO_RENEW" description="COM_RSMEMBERSHIP_MEMBERSHIP_NO_RENEW_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="stock-activation" label="COM_RSMEMBERSHIP_MEMBERSHIP_STOCK_ACTIVATION" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="stock" type="text" default="0" class="input-tiny" label="COM_RSMEMBERSHIP_MEMBERSHIP_STOCK" description="COM_RSMEMBERSHIP_MEMBERSHIP_STOCK_DESC" size="20" />
+
+		<field name="activation" type="list" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_ACTIVATION" description="COM_RSMEMBERSHIP_MEMBERSHIP_ACTIVATION_DESC" default="1">
+			<option value="0">COM_RSMEMBERSHIP_ACTIVATION_MANUAL</option>
+			<option value="1">COM_RSMEMBERSHIP_ACTIVATION_AUTO</option>
+			<option value="2">COM_RSMEMBERSHIP_ACTIVATION_INSTANT</option>
+		</field>
+
+		<field name="gid_enable" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBSCRIBE_USER_TYPE_ENABLE" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBSCRIBE_USER_TYPE_ENABLE_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="gid_subscribe" type="rsmusergroup" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBSCRIBE_ADD_GID" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBSCRIBE_ADD_GID_DESC" size="10" multiple="multiple" />
+		<field name="gid_expire" type="rsmusergroup" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRE_REMOVE_GID" description="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRE_REMOVE_GID_DESC" size="10" multiple="multiple" />
+
+		<field name="disable_expired_account" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_MEMBERSHIP_DISABLE_EXPIRED_ACCOUNT" description="COM_RSMEMBERSHIP_MEMBERSHIP_DISABLE_EXPIRED_ACCOUNT_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+	</fieldset>
+	<fieldset name="extras" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXTRAS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		
+		<field name="extras" type="extras" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXTRAS" description="COM_RSMEMBERSHIP_MEMBERSHIP_EXTRAS_DESC" />
+
+	</fieldset>
+	<fieldset name="shared" label="COM_RSMEMBERSHIP_SHARED" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="share_redirect" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SHARE_REDIRECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SHARE_REDIRECT_DESC" size="200" filter="JComponentHelper::filterText" />
+
+	</fieldset>
+	<fieldset name="messages" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGES" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="action" type="list" class="input-large" label="COM_RSMEMBERSHIP_MEMBERSHIP_ACTION" description="COM_RSMEMBERSHIP_MEMBERSHIP_ACTION_DESC" default="0">
+			<option value="0">COM_RSMEMBERSHIP_MEMBERSHIP_SHOW_THANKYOU</option>
+			<option value="1">COM_RSMEMBERSHIP_MEMBERSHIP_REDIRECT</option>
+		</field>
+
+		<field name="thankyou" type="editor" default="COM_RSMEMBERSHIP_MEMBERSHIP_THANKYOU_DEFAULT" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_THANKYOU" description="COM_RSMEMBERSHIP_MEMBERSHIP_THANKYOU_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" translate_default="true" />
+
+		<field name="redirect" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_REDIRECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_REDIRECT_DESC" size="200" filter="JComponentHelper::filterText" />
+
+	</fieldset>
+	<fieldset name="email-user" label="COM_RSMEMBERSHIP_MEMBERSHIP_USER_EMAIL" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="user_email_use_global" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_SUBSCRIBER_EMAIL_USE_GLOBAL" description="COM_RSMEMBERSHIP_SUBSCRIBER_EMAIL_USE_GLOBAL_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="user_email_mode" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_EMAIL_MODE" description="COM_RSMEMBERSHIP_EMAIL_MODE_DESC" default="1" labelclass="control-label">
+			<option value="0">COM_RSMEMBERSHIP_PLAIN_TEXT</option>
+			<option value="1">COM_RSMEMBERSHIP_HTML</option>
+		</field>
+
+		<field name="user_email_from" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_FROM" description="COM_RSMEMBERSHIP_MEMBERSHIP_FROM_DESC" size="200" />
+
+		<field name="user_email_from_addr" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_FROM_ADDR" description="COM_RSMEMBERSHIP_MEMBERSHIP_FROM_ADDR_DESC" size="200" />
+
+		<field name="user_email_new_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_new_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+ 
+		<field name="user_email_approved_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_approved_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="user_email_denied_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_denied_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="user_email_renew_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_renew_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="user_email_upgrade_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_upgrade_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="user_email_addextra_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_addextra_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="expire_notify_interval" type="text" class="input-tiny" default="3" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRE_NOTIFY_INTERVAL" description="COM_RSMEMBERSHIP_MEMBERSHIP_EXPIRE_NOTIFY_INTERVAL_DESC" size="10" />
+
+		<field name="user_email_expire_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="user_email_expire_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+	</fieldset>
+	<fieldset name="email-admin" label="COM_RSMEMBERSHIP_MEMBERSHIP_ADMIN_EMAIL" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="admin_email_mode" type="radio" class="btn-group" data-toggle="buttons-radio" label="COM_RSMEMBERSHIP_EMAIL_MODE" description="COM_RSMEMBERSHIP_EMAIL_MODE_DESC" default="1" labelclass="control-label">
+			<option value="0">COM_RSMEMBERSHIP_PLAIN_TEXT</option>
+			<option value="1">COM_RSMEMBERSHIP_HTML</option>
+		</field>
+		
+		<field name="admin_email_from_addr" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_ADMIN_FROM" description="COM_RSMEMBERSHIP_MEMBERSHIP_ADMIN_FROM_DESC" size="200" />
+		
+		<field name="admin_email_to_addr" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_TO" description="COM_RSMEMBERSHIP_MEMBERSHIP_TO_DESC" size="200" />
+		
+		<field name="admin_email_new_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_new_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="admin_email_approved_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_approved_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="admin_email_denied_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_denied_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		
+		<field name="admin_email_renew_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_renew_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="admin_email_upgrade_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_upgrade_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="admin_email_addextra_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_addextra_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="admin_email_expire_subject" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT" description="COM_RSMEMBERSHIP_MEMBERSHIP_SUBJECT_DESC" size="200" />
+
+		<field name="admin_email_expire_text" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE" description="COM_RSMEMBERSHIP_MEMBERSHIP_MESSAGE_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+	</fieldset>
+	<fieldset name="advanced-customization" label="COM_RSMEMBERSHIP_MEMBERSHIP_ADVANCED_CUSTOMIZATION" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="custom_code" type="textarea" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_CUSTOM_CODE" description="COM_RSMEMBERSHIP_MEMBERSHIP_CUSTOM_CODE_DESC" cols="70" rows="15" filter="raw" />
+
+		<field name="custom_code_transaction" type="textarea" class="input-xxlarge" label="COM_RSMEMBERSHIP_MEMBERSHIP_CUSTOM_CODE_TRANSACTION" description="COM_RSMEMBERSHIP_MEMBERSHIP_CUSTOM_CODE_TRANSACTION_DESC" cols="70" rows="15" filter="raw" />
+
+	</fieldset>
+</form>

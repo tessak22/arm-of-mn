@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset>
+		<field name="id"  type="hidden" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="" 
+			readonly="true"  />
+
+		<field name="title" type="text" label="COM_FORM2CONTENT_TITLE"
+			description="COM_FORM2CONTENT_TITLE_DESC" class="inputbox" size="60" maxlength="200"
+			required="true" />
+					
+		<field name="template" type="textarea"
+			label="COM_FORM2CONTENT_TEMPLATE" description="COM_FORM2CONTENT_TEMPLATE"
+			rows="30" filter="raw" />
+	</fieldset>
+</form>	

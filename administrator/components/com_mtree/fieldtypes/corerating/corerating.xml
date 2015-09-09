@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+	<name>corerating</name>
+	<caption>Rating</caption>
+	<author>Lee Cher Yeong</author>
+	<creationDate>May 2015</creationDate>
+	<copyright>(C) 2011-present Mosets Consulting. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>3.6.0</version>
+	<description></description>
+	<useElements>0</useElements>
+	<useSize>0</useSize>
+	<taggable>0</taggable>
+	<fileset>
+		<files folder="." target="administrator/components/com_mtree/fieldtypes/corerating">
+			<filename>corerating.php</filename>
+			<filename>corerating.xml</filename>
+			<filename>index.html</filename>
+		</files>
+	</fileset>
+    <config>
+        <fields>
+            <fieldset name="basic">
+                <field name="outputFormat" type="radio" default="1" class="btn-group" label="Output Format" description="Select the output format. When 'Value' is selected, the numerical value of the rating will be shown instead of Stars.">
+                    <option value="1">Stars</option>
+                    <option value="2">Value</option>
+                </field>
+                <field name="searchFieldType" type="list" default="3" label="Search Field Type" description="Select how your user search this field.&lt;br&gt;Exact: A single input field will be shown for searching listings with the exact number.&lt;br&gt;From X To Y: 2 input fields will be shown to allow users to search for listings within a range of 2 numbers. When only one of the number is provided, it will be used as the minimum or maximum cap.&lt;br&gt;Exactly/More Than/Less Than X: A select list and an input field will be shown to allow users to search for listings with exact, more than or less than the given value.">
+                    <option value="1">Exact</option>
+                    <option value="2">Contains</option>
+                    <option value="3">From X To Y</option>
+                    <option value="4">Exactly/More Than/Less Than X</option>
+                </field>
+                <field name="decimals" type="list" default="2" label="Decimals" description="Sets the number of decimal points.">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+                <field name="decimalPoint" type="text" default="." label="Decimal Point" description="Sets the separator for the decimal point. By default this is a dot (.)." />
+            </fieldset>
+        </fields>
+    </config>
+	<updateservers>
+		<server type="extension">http://update.mosets.com/mtree/fieldtypes/corerating.xml</server>
+	</updateservers>
+</extension>

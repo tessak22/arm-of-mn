@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_EXTRA_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="published" type="radio" class="btn-group" label="com_rsmembership_published" description="com_rsmembership_published_desc" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="name" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_EXTRA" description="COM_RSMEMBERSHIP_EXTRA_DESC"  size="200" required="required" />
+
+		<field name="description" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_CATEGORY_DESCRIPTION" description="COM_RSMEMBERSHIP_CATEGORY_DESCRIPTION_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+		
+		<field name="type" type="list" class="input-large" label="COM_RSMEMBERSHIP_EXTRA_TYPE" description="COM_RSMEMBERSHIP_EXTRA_TYPE_DESC" default="dropdown" labelclass="control-label">
+			<option value="dropdown">COM_RSMEMBERSHIP_DROPDOWN</option>
+			<option value="radio">COM_RSMEMBERSHIP_RADIO</option>
+			<option value="checkbox">COM_RSMEMBERSHIP_CHECKBOX</option>
+		</field>
+
+		<field name="assign_extras" type="text" label="COM_RSMEMBERSHIP_EXTRA_VALUES" description="COM_RSMEMBERSHIP_EXTRA_VALUES_DESC" default="0" />
+		<field name="id" type="hidden" default="0" />
+
+	</fieldset>
+</form>
+

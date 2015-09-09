@@ -1,0 +1,5 @@
+[11-Aug-2015 23:04:38 America/New_York] PHP Fatal error:  Call to undefined method Joomla\Registry\Registry::getValue() in /home/windmill/public_html/arm-dev2/administrator/components/com_csvi/csvi.php on line 54
+[11-Aug-2015 23:04:44 America/New_York] PHP Fatal error:  Call to undefined method Joomla\Registry\Registry::getValue() in /home/windmill/public_html/arm-dev2/administrator/components/com_csvi/csvi.php on line 54
+[26-Aug-2015 10:34:46 America/New_York] PHP Fatal error:  Call to undefined method PlgEditorsXtdSnippetsInstallerScript::uninstallComponents() in /home/windmill/public_html/arm-dev2/plugins/editors-xtd/snippets/script.install.php on line 27
+[26-Aug-2015 10:35:12 America/New_York] PHP Fatal error:  Call to undefined method PlgEditorsXtdSnippetsInstallerScript::uninstallComponents() in /home/windmill/public_html/arm-dev2/plugins/editors-xtd/snippets/script.install.php on line 27
+[26-Aug-2015 10:35:22 America/New_York] PHP Fatal error:  Call to undefined method PlgEditorsXtdSnippetsInstallerScript::uninstallComponents() in /home/windmill/public_html/arm-dev2/plugins/editors-xtd/snippets/script.install.php on line 27

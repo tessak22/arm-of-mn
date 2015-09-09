@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_FILE_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="path" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_PATH" description="COM_RSMEMBERSHIP_PATH_DESC" size="200" required="required" readonly="true" filter="raw" />
+
+		<field name="name" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_FILE" description="COM_RSMEMBERSHIP_FILE_DESC" size="200" required="required" />
+
+		<field name="description" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_FILE_DESCRIPTION" description="COM_RSMEMBERSHIP_FILE_DESCRIPTION_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="thumb" type="getimage" class="input-xxlarge" label="COM_RSMEMBERSHIP_FILE_THUMB" description="COM_RSMEMBERSHIP_FILE_THUMB_DESC" size="200" folder_location="files"/>
+
+		<field name="thumb_resize" type="resize" default="100" class="input-xxlarge" label="COM_RSMEMBERSHIP_RESIZE_TO" size="200" />
+
+		<field name="term_id" type="sql" class="input-large" label="COM_RSMEMBERSHIP_TERM" description="COM_RSMEMBERSHIP_TERM_DESC"  query="SELECT id, name FROM #__rsmembership_terms" key_field="id" value_field="name" />
+
+		<field name="id" type="hidden" default="0" />
+
+	</fieldset>
+</form>

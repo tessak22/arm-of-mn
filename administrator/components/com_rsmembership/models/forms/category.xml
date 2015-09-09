@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_CATEGORY_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="name" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_CATEGORY_NAME" description="COM_RSMEMBERSHIP_CATEGORY_NAME_DESC"  size="200" required="required" />
+
+		<field name="description" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_CATEGORY_DESCRIPTION" description="COM_RSMEMBERSHIP_CATEGORY_DESCRIPTION_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" />
+
+		<field name="id" type="hidden" default="0" />
+
+	</fieldset>
+</form>
+

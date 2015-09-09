@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_COUPON_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="name" type="couponcode" class="input-medium" label="COM_RSMEMBERSHIP_COUPON_CODE" description="COM_RSMEMBERSHIP_COUPON_CODE_DESC"  size="30" required="required" />
+
+		<field name="discount_price" type="text" class="input-small" label="COM_RSMEMBERSHIP_DISCOUNT" description="COM_RSMEMBERSHIP_DISCOUNT_DESC" size="10" required="required" />
+
+		<field name="discount_type" type="list" class="input-medium" label="COM_RSMEMBERSHIP_DISCOUNT_TYPE" description="COM_RSMEMBERSHIP_DISCOUNT_TYPE_DESC">
+			<option value="0">COM_RSMEMBERSHIP_PERCENT</option>
+			<option value="1">COM_RSMEMBERSHIP_FIXED_VALUE</option>
+		</field>
+
+		<field name="max_uses" type="text" class="input-small" label="COM_RSMEMBERSHIP_MAX_USES" description="COM_RSMEMBERSHIP_MAX_USES_DESC" size="20" />
+
+		<field name="date_start" type="calendar" class="input-small" label="COM_RSMEMBERSHIP_FROM" description="COM_RSMEMBERSHIP_FROM_DESC" size="20" />
+
+		<field name="date_end" type="calendar" class="input-small" label="COM_RSMEMBERSHIP_TO" description="COM_RSMEMBERSHIP_TO_DESC" size="20" />
+
+		<field name="used_for" type="memberships" class="input-large" label="COM_RSMEMBERSHIP_COUPON_APPLIES_FOR" description="COM_RSMEMBERSHIP_COUPON_APPLIES_FOR_DESC" size="12" multiple="multiple" />
+
+		<field name="id" type="hidden" default="0" />	
+	</fieldset>
+</form>
+

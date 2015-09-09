@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_SUBSCRIBER_INFO" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="user_id" type="hidden" default="0" />
+
+	</fieldset>
+</form>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_MEMBERSHIP_FIELDS_DETAILS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="published" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" default="1" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="membership_id" type="memberships" class="input-large" label="COM_RSMEMBERSHIP_FIELD_MEMBERSHIP_ID" description="COM_RSMEMBERSHIP_FIELD_MEMBERSHIP_ID_DESC" required="required" />
+		
+		<field name="name" type="text" default="" class="input-large" size="85" label="COM_RSMEMBERSHIP_FIELD" description="COM_RSMEMBERSHIP_FIELD_DESC" />
+
+		<field name="label" type="text" default="" class="input-large" size="85" label="COM_RSMEMBERSHIP_LABEL" description="COM_RSMEMBERSHIP_LABEL_DESC" />
+
+		<field name="type" type="list" default="textbox" class="input-large inputbox" label="COM_RSMEMBERSHIP_TYPE" description="COM_RSMEMBERSHIP_TYPE_DESC" labelclass="control-label">
+			<option value="freetext">COM_RSMEMBERSHIP_FREETEXT</option>
+			<option value="textbox">COM_RSMEMBERSHIP_TEXTBOX</option>
+			<option value="textarea">COM_RSMEMBERSHIP_TEXTAREA</option>
+			<option value="select">COM_RSMEMBERSHIP_SELECTBOX</option>
+			<option value="multipleselect">COM_RSMEMBERSHIP_MULTIPLESELECT</option>
+			<option value="checkbox">COM_RSMEMBERSHIP_CHECKBOX</option>
+			<option value="radio">COM_RSMEMBERSHIP_RADIO</option>
+			<option value="calendar">COM_RSMEMBERSHIP_CALENDAR</option>
+			<option value="hidden">COM_RSMEMBERSHIP_HIDDEN</option>
+		</field>
+
+		<field name="values" type="textarea" label="COM_RSMEMBERSHIP_VALUES" description="COM_RSMEMBERSHIP_VALUES_DESC" class="inputbox" rows="3" cols="30" filter="raw" />
+
+		<field name="additional" type="textarea" label="COM_RSMEMBERSHIP_ADDITIONAL_ATTR" description="COM_RSMEMBERSHIP_ADDITIONAL_ATTR_DESC" class="inputbox" rows="3" cols="30" filter="raw" />
+
+		<field name="required" type="radio" class="btn-group" label="COM_RSMEMBERSHIP_REQUIRED" description="COM_RSMEMBERSHIP_REQUIRED_DESC" default="0" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+
+		<field name="rule" type="list" default="" class="input-large" label="COM_RSMEMBERSHIP_VALIDATION_RULE" description="COM_RSMEMBERSHIP_VALIDATION_RULE_DESC" labelclass="control-label">
+			<option value="">COM_RSMEMBERSHIP_NONE</option>
+			<option value="alpha">COM_RSMEMBERSHIP_ALPHA</option>
+			<option value="alphanumeric">COM_RSMEMBERSHIP_ALPHANUMERIC</option>
+			<option value="numeric">COM_RSMEMBERSHIP_NUMERIC</option>
+			<option value="email">COM_RSMEMBERSHIP_EMAIL</option>
+			<option value="website">COM_RSMEMBERSHIP_WEBSITE</option>
+		</field>
+
+		<field name="validation" type="textarea" label="COM_RSMEMBERSHIP_VALIDATION" description="COM_RSMEMBERSHIP_VALIDATION_DESC" class="inputbox" rows="3" cols="30" />
+
+		<field name="id" type="hidden" />
+
+	</fieldset>
+</form>

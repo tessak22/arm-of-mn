@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="main" label="COM_RSMEMBERSHIP_SHARE_URL" description="COM_RSMEMBERSHIP_URL_PLEASE_USE_NON_SEF" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="published" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_PUBLISHED" description="COM_RSMEMBERSHIP_PUBLISHED_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="where" type="list" default="frontendurl" class="input-medium" label="COM_RSMEMBERSHIP_URL_WHERE" description="COM_RSMEMBERSHIP_URL_WHERE_DESC">
+			<option value="frontendurl">COM_RSMEMBERSHIP_FRONTEND</option>
+			<option value="backendurl">COM_RSMEMBERSHIP_BACKEND</option>
+		</field>
+		<field name="params" type="text" class="input" label="COM_RSMEMBERSHIP_URL_ADDRESS" description="COM_RSMEMBERSHIP_URL_ADDRESS_DESC" size="75" required="required" />
+		<field name="id" type="hidden" default="0" />
+	</fieldset>
+</form>

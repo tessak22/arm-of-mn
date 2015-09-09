@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="file" version="3.0.0" method="upgrade" mosetsExtension="mtreeFieldtype">
+	<name>coreprice</name>
+	<caption>Price</caption>
+	<author>Lee Cher Yeong</author>
+	<creationDate>May 2015</creationDate>
+	<copyright>(C) 2011-present Mosets Consulting. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later</license>
+	<authorEmail>mtree@mosets.com</authorEmail>
+	<authorUrl>www.mosets.com</authorUrl>
+	<version>3.6.0</version>
+	<description></description>
+	<useElements>0</useElements>
+	<useSize>0</useSize>
+	<taggable>0</taggable>
+	<fileset>
+		<files folder="." target="administrator/components/com_mtree/fieldtypes/coreprice">
+			<filename>coreprice.php</filename>
+			<filename>coreprice.xml</filename>
+			<filename>index.html</filename>
+		</files>
+	</fileset>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.fld_coreprice.ini</language>
+	</languages>
+	<config>
+		<fields>
+			<fieldset name="basic">
+                <field name="whenPriceIs0" type="radio" default="3" class="btn-group" label="When Price is 0" description="Control what to show when the price is 0.00. If you set this to show 'Free', you can change the override the text in your language file using the language key FLD_COREPRICE_FREE.">
+                    <option value="1">Show 0.00</option>
+                    <option value="2">Show 'Free'</option>
+                    <option value="3">Hide Field</option>
+                </field>
+                <field name="searchFieldType" type="list" default="3" label="Search Field Type" description="Select how your user search this field.&lt;br&gt;Exact: A single input field will be shown for searching listings with the exact number.&lt;br&gt;From X To Y: 2 input fields will be shown to allow users to search for listings within a range of 2 numbers. When only one of the number is provided, it will be used as the minimum or maximum cap.&lt;br&gt;Exactly/More Than/Less Than X: A select list and an input field will be shown to allow users to search for listings with exact, more than or less than the given value.">
+                    <option value="1">Exact</option>
+                    <option value="2">Contains</option>
+                    <option value="3">From X To Y</option>
+                    <option value="4">Exactly/More Than/Less Than X</option>
+                </field>
+                <field name="decimals" type="list" default="2" label="Decimals" description="Sets the number of decimal points.">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </field>
+                <field name="decimalPoint" type="text" default="." label="Decimal Point" description="Sets the separator for the decimal point. By default this is a dot (.)." />
+                <field name="thousandSeparator" type="text" default="," label="Thousand Separator" description="Sets the thousands separator. By default this is a comma (,)." />
+			</fieldset>
+		</fields>
+	</config>
+	<updateservers>
+		<server type="extension">http://update.mosets.com/mtree/fieldtypes/coreprice.xml</server>
+	</updateservers>
+</extension>

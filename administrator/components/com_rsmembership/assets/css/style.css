@@ -1,0 +1,274 @@
+.table tbody tr.success > td { background-color: #dff0d8;}
+.table tbody tr.error > td { background-color: #f2dede;}
+.table tbody tr.warning > td { background-color: #fcf8e3; }
+.table tbody tr.info > td { background-color: #d9edf7; }
+.table-hover tbody tr.success:hover > td { background-color: #d0e9c6; }
+.table-hover tbody tr.error:hover > td { background-color: #ebcccc; }
+.table-hover tbody tr.warning:hover > td { background-color: #faf2cc; }
+.table-hover tbody tr.info:hover > td { background-color: #c4e3f3; }
+
+.icon-48-rsmembership{ background-image: url(../images/icon-48-rsmembership.png); }
+.icon-48-transactions{ background-image: url(../images/transactions.png);}
+.icon-48-memberships{ background-image: url(../images/memberships.png);}
+.icon-48-categories { background-image: url(../images/categories.png) !important; }
+.icon-48-extras { background-image: url(../images/extras.png); }
+.icon-48-upgrades { background-image: url(../images/upgrades.png); }
+.icon-48-coupons { background-image: url(../images/coupons.png); }
+.icon-48-payments { background-image: url(../images/payments.png); }
+.icon-48-terms { background-image: url(../images/terms.png); }
+.icon-48-files { background-image: url(../images/files.png); }
+.icon-48-fields { background-image: url(../images/fields.png); }
+.icon-48-subscribers { background-image: url(../images/subscribers.png); }
+.icon-48-subscriptions { background-image: url(../images/subscriptions.png); }
+.icon-48-reports { background-image: url(../images/reports.png); }
+.icon-48-updates { background-image: url(../images/updates.png); }
+.icon-48-membership_fields { background-image: url(../images/membership_fields.png); }
+
+.rsmembership_clear
+{
+	display: block;
+	clear: both;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+a.folder
+{
+	background: url(../images/folder.gif) no-repeat;
+	padding-left: 20px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+a.file
+{
+	background: url(../images/file.gif) no-repeat;
+	padding-left: 20px;
+	display: block;
+	float: left;
+	margin-right: 10px;
+}
+
+
+.icon-32-approve
+{
+	background-image: url(../images/icon-32-approve.png);
+}
+
+.icon-32-deny
+{
+	background-image: url(../images/icon-32-deny.png);
+}
+
+#jform_membership_start_ajax, #jform_membership_end_ajax { 
+	float:left;
+	margin:7px 4px;
+}
+#change_unlimited {float:left;}
+#rsm_lbl_unlimited {clear:right;padding-top:0px;}
+#rsm_lbl_change_noextra {clear:right;padding-top:0px;}
+
+
+.com-rsmembership-spacer-desc {  padding: 20px 0;}
+
+#rsmembership_chart_container {width:100%}
+#rsmembership_chart_container .span2, #rsmembership_chart_container .span10 {float:left}
+#rsmembership_chart_container .span2  {width:15%; }
+#rsmembership_chart_container .span10 {width:83%; }
+#rsmembership_chart_container label {min-width:75px}
+#rsmebership_warning_box { border:1px solid red; background:#FFE5DF; padding:1%; width:98%; font-weight:bold; margin-top:17px; display:none;} 
+#rsmembership_chart_div {margin-top:5px}
+
+/* Overview */
+.correct-code { background: green; color: white;}
+.incorrect-code { background: red; color: white; }
+.missing-code { background: orange; }
+.incorrect-code a, .missing-code a { color: white !important;}
+
+#rsmembership_chart_overview {margin-top:15px}
+
+div.center {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    width: 119px;
+}
+.rsme_vcenter { display:inline-block; vertical-align:middle; }
+.text-right {text-align:right !important;}
+.rsme_pointer {cursor:pointer;}
+
+.rsme_memberships_outercontainer {
+	overflow:hidden; 
+	clear:left;
+}
+.rsme_memberships_outercontainer button:focus {
+	outline: none;
+}
+#rsme_memberships {
+	border-bottom:1px solid #DDDDDD;
+	padding: 10px 0px;
+}
+
+#rsme_memberships ul {
+	list-style-type:none;
+	overflow:hidden;
+	margin: 2px 0px 10px;
+	padding: 15px;
+	background: #D9EDF7;
+	border:1px solid #BCE8F1;
+	border-radius:4px;
+}
+#rsme_memberships ul li {
+	display: inline-block;
+	margin:3px 10px 0px 3px;
+}
+#rsme_memberships ul li input[type="checkbox"] {
+	margin-top: 3px;
+	float:left;
+}
+#rsme_memberships ul li label {
+	display:inline-block;
+	margin:0px 0px 0px 3px;
+}
+.rsme_notified {
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding: 3px 5px;
+}
+.rsme_notified.rsme_danger {
+	background:#DA4F49;
+}
+.rsme_notified.rsme_primary {
+	background:#DA4F49;
+}
+.rsme_table_vmiddle  tr td{
+	vertical-align: middle;
+}
+
+.rsme_table_vtop tr td {
+	vertical-align: top;
+}
+
+.rsme_align_right {
+	text-align:right !important;
+}
+.rsme_text_color_completed {
+	color: #1D6300;
+}
+.rsme_text_color_pending {
+	color: #AD9200;
+}
+.rsme_text_color_denied{
+	color: #CF0000;
+}
+
+#rsmembership_chart_info {
+	font-size:14px;
+	overflow:hidden;
+	padding: 0 6%;
+}
+#rsmembership_chart_info .rsmem_sales_info {
+	clear:both;
+	margin-bottom: 5px;
+	overflow:hidden;
+}
+#rsmembership_chart_info .rsmem_sales_info .rsmem_sales_total,
+#rsmembership_chart_info .rsmem_sales_info .rsmem_sales_average {
+	font-weight:bold;
+}
+#rsmembership_chart_info .rsmem_sales_info .rsmem_sales_total_value,
+#rsmembership_chart_info .rsmem_sales_info .rsmem_sales_average_value {
+	font-size:20px;
+	font-weight:bold;
+}
+
+.rsmem_blue {
+	color:#0477B5;
+}
+.rsmem_red {
+	color:#FF0505;
+}
+.rsmem_loader {
+	background: url('../images/loading.gif') no-repeat;
+	margin:0 auto;
+	width: 128px;
+	height: 15px;
+	margin-top: 10%;
+}
+
+/* outer */
+.com-rsmembership-progress {
+  height: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: #f7f7f7;
+  background-image: -moz-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#f9f9f9));
+  background-image: -webkit-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: -o-linear-gradient(top, #f5f5f5, #f9f9f9);
+  background-image: linear-gradient(to bottom, #f5f5f5, #f9f9f9);
+  background-repeat: repeat-x;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#fff9f9f9', GradientType=0);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* inner */
+.com-rsmembership-progress .com-rsmembership-bar {
+	line-height: 20px;
+	padding-right: 10px;
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #ffffff;
+  text-align: right;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #0e90d2;
+  background-image: -moz-linear-gradient(top, #149bdf, #0480be);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#149bdf), to(#0480be));
+  background-image: -webkit-linear-gradient(top, #149bdf, #0480be);
+  background-image: -o-linear-gradient(top, #149bdf, #0480be);
+  background-image: linear-gradient(to bottom, #149bdf, #0480be);
+  background-repeat: repeat-x;
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ff149bdf', endColorstr='#ff0480be', GradientType=0);
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: width 0.6s ease;
+     -moz-transition: width 0.6s ease;
+       -o-transition: width 0.6s ease;
+          transition: width 0.6s ease;
+}
+
+.rsmem_calendar_btn {
+	width:200px; 
+	overflow:hidden;
+}
+.rsmem_calendar_btn button[type="submit"] {
+	margin-right:5px;
+ }
+ 
+.rsmem_transaction_userinfo .adminform div{
+	margin-bottom: 5px !important;
+}
+.rsmem_transaction_userinfo .adminform div .control-label {
+	padding-top:0px;
+}
+.rsmem_transaction_userinfo .adminform div .control-label  label{
+	font-weight: bold !important;
+}
+.rsmem_transaction_info_table  tr td{
+	padding-bottom:10px;
+}
+.rsmem_transaction_info_table  tr td:first-child {
+	font-weight:bold;
+}

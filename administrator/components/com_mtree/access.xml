@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<access component="com_mtree">
+    <section name="component">
+        <action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+        <action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+        <action name="mtree.listing.create" title="COM_MTREE_PERMISSION_LISTING_CREATE_TITLE" description="COM_MTREE_PERMISSION_LISTING_CREATE_DESC" />
+        <action name="mtree.category.create" title="COM_MTREE_PERMISSION_CATEGORY_CREATE_TITLE" description="COM_MTREE_PERMISSION_CATEGORY_CREATE_DESC" />
+        <action name="mtree.listing.rate" title="COM_MTREE_PERMISSION_LISTING_RATE_TITLE" description="COM_MTREE_PERMISSION_LISTING_RATE_DESC" />
+        <action name="mtree.listing.review" title="COM_MTREE_PERMISSION_LISTING_REVIEW_TITLE" description="COM_MTREE_PERMISSION_LISTING_REVIEW_DESC" />
+        <action name="mtree.listing.contact" title="COM_MTREE_PERMISSION_LISTING_CONTACT_TITLE" description="COM_MTREE_PERMISSION_LISTING_CONTACT_DESC" />
+        <action name="mtree.listing.recommend" title="COM_MTREE_PERMISSION_LISTING_RECOMMEND_TITLE" description="COM_MTREE_PERMISSION_LISTING_RECOMMEND_DESC" />
+        <action name="mtree.listing.report" title="COM_MTREE_PERMISSION_LISTING_REPORT_TITLE" description="COM_MTREE_PERMISSION_LISTING_REPORT_DESC" />
+        <action name="mtree.listing.report_review" title="COM_MTREE_PERMISSION_LISTING_REPORT_REVIEW_TITLE" description="COM_MTREE_PERMISSION_LISTING_REPORT_REVIEW_DESC" />
+        <action name="mtree.listing.claim" title="COM_MTREE_PERMISSION_LISTING_CLAIM_TITLE" description="COM_MTREE_PERMISSION_LISTING_CLAIM_DESC" />
+    </section>
+</access>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>  
+	<fieldset name="general" label="COM_RSMEMBERSHIP_GENERAL" >		
+		<field name="date_format" type="text" default="d.m.Y H:i:s" class="input-medium" label="COM_RSMEMBERSHIP_DATE_TIME" description="COM_RSMEMBERSHIP_DATE_TIME_DESC" size="20" />
+		<field name="currency" type="text" default="EUR" class="input-tiny" label="COM_RSMEMBERSHIP_MEMBERSHIP_CURRENCY" description="COM_RSMEMBERSHIP_MEMBERSHIP_CURRENCY_DESC" size="10" required="required" />
+		<field name="price_format" type="text" default="{price} {currency}" class="input-tiny" label="COM_RSMEMBERSHIP_PRICE_FORMAT" description="COM_RSMEMBERSHIP_PRICE_FORMAT_DESC" size="15" />
+		<field name="price_show_free" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_PRICE_SHOW_FREE" description="COM_RSMEMBERSHIP_PRICE_SHOW_FREE_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="delete_pending_after" type="text" default="168" class="input-tiny" label="COM_RSMEMBERSHIP_DELETE_PENDING_AFTER" description="COM_RSMEMBERSHIP_DELETE_PENDING_AFTER_DESC" size="10" />
+		<field name="disable_registration" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_DISABLE_REGISTRATION" description="COM_RSMEMBERSHIP_DISABLE_REGISTRATION_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="registration_page" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_REGISTRATION_PAGE" description="COM_RSMEMBERSHIP_REGISTRATION_PAGE_DESC" size="200" />
+		<field name="load_bootstrap" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_LOAD_BOOTSTRAP" description="COM_RSMEMBERSHIP_LOAD_BOOTSTRAP_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="trigger_content_plugins" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_TRIGGER_CONTENT_PLUGINS" description="COM_RSMEMBERSHIP_TRIGGER_CONTENT_PLUGINS_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>	
+	<fieldset name="configuration-patches" label="COM_RSMEMBERSHIP_PATCHES" description="COM_RSMEMBERSHIP_PATCHES_DESC">	
+		<field name="patches" type="patches" elementtype="module" />
+	</fieldset>	
+	<fieldset name="expiration" label="COM_RSMEMBERSHIP_EXPIRE_NOTIFICATION_SETTINGS" >
+		<field name="expire_emails" type="text" default="10" class="input-small" label="COM_RSMEMBERSHIP_EXPIRE_EMAILS" description="COM_RSMEMBERSHIP_EXPIRE_EMAILS_DESC" size="20" />
+		<field name="expire_check_in" type="text" default="10" class="input-small" label="COM_RSMEMBERSHIP_EXPIRE_CHECK_IN" description="COM_RSMEMBERSHIP_EXPIRE_CHECK_IN_DESC" size="20" />
+	</fieldset>	
+	<fieldset name="configuration-subscribing" label="COM_RSMEMBERSHIP_SUBSCRIBING" >
+		<field name="one_page_checkout" type="list" default="0" label="COM_RSMEMBERSHIP_CHECKOUT_DISPLAY" description="COM_RSMEMBERSHIP_CHECKOUT_DISPLAY_DESC" labelclass="control-label">
+			<option value="0">COM_RSMEMBERSHIP_MULTI_PAGE_CHECKOUT</option>
+			<option value="1">COM_RSMEMBERSHIP_ONE_PAGE_CHECKOUT</option>
+		</field>
+		<field name="show_login" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_SHOW_LOGIN" description="COM_RSMEMBERSHIP_SHOW_LOGIN_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="create_user_instantly" type="list" default="1" label="COM_RSMEMBERSHIP_CREATE_USER_WHEN" description="COM_RSMEMBERSHIP_CREATE_USER_WHEN_DESC" labelclass="control-label">
+			<option value="0">COM_RSMEMBERSHIP_WHEN_PAYMENT</option>
+			<option value="1">COM_RSMEMBERSHIP_WHEN_ORDER</option>
+		</field>	
+		<field name="full_email_username" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_FULL_EMAIL_USERNAME" description="COM_RSMEMBERSHIP_FULL_EMAIL_USERNAME_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="choose_username" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_CHOOSE_USERNAME" description="COM_RSMEMBERSHIP_CHOOSE_USERNAME_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="choose_password" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_CHOOSE_PASSWORD" description="COM_RSMEMBERSHIP_CHOOSE_PASSWORD_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="replace_gid" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_REPLACE_GID" description="COM_RSMEMBERSHIP_REPLACE_GID_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	<fieldset name="captcha" label="COM_RSMEMBERSHIP_CAPTCHA">
+		<field name="captcha_enabled" type="list" default="0" label="COM_RSMEMBERSHIP_CAPTCHA_ENABLE" description="COM_RSMEMBERSHIP_CAPTCHA_ENABLE_DESC">
+			<option	value="0">JNO</option>
+			<option value="1">COM_RSMEMBERSHIP_USE_BUILTIN_CAPTCHA</option>
+			<option	value="2">COM_RSMEMBERSHIP_USE_RECAPTCHA</option>
+			<option	value="3">COM_RSMEMBERSHIP_USE_RECAPTCHA_NEW</option>
+		</field>
+		<field name="captcha_enabled_for" type="checkboxes" default="1,0" class="inputbox" label="COM_RSMEMBERSHIP_CAPTCHA_ENABLED_FOR" description="COM_RSMEMBERSHIP_CAPTCHA_ENABLED_FOR_DESC">
+			<option value="0">COM_RSMEMBERSHIP_CAPTCHA_UNREGISTERED</option>
+			<option	value="1">COM_RSMEMBERSHIP_CAPTCHA_REGISTERED</option>
+		</field>
+		<field type="spacer" name="captcha_spacer" class="text" label="COM_RSMEMBERSHIP_CAPTCHA_SETTINGS" />
+		<field name="captcha_characters" type="text" default="5" class="input-small rsme_captcha_field" description="COM_RSMEMBERSHIP_CAPTCHA_CHARACTERS_DESC" label="COM_RSMEMBERSHIP_CAPTCHA_CHARACTERS" size="10" filter="integer" />
+		<field name="captcha_lines" type="radio" default="1" class="btn-group rsme_captcha_field" label="COM_RSMEMBERSHIP_CAPTCHA_LINES" description="COM_RSMEMBERSHIP_CAPTCHA_LINES_DESC">
+			<option value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>	
+		<field name="captcha_case_sensitive" type="radio" default="0" class="btn-group rsme_captcha_field" label="COM_RSMEMBERSHIP_CAPTCHA_CASE_SENSITIVE" description="COM_RSMEMBERSHIP_CAPTCHA_CASE_SENSITIVE_DESC">
+			<option value="0">JNO</option>
+			<option	value="1">JYES</option>
+		</field>
+		<field type="spacer" name="recaptcha_spacer" class="text" label="COM_RSMEMBERSHIP_RECAPTCHA_SETTINGS" />
+		<field name="recaptcha_public_key" type="text" class="input-xlarge rsme_recaptcha_field" description="COM_RSMEMBERSHIP_RECAPTCHA_PUBLIC_KEY_DESC" label="COM_RSMEMBERSHIP_RECAPTCHA_PUBLIC_KEY" size="70" />
+		<field name="recaptcha_private_key" type="text" class="input-xlarge rsme_recaptcha_field" description="COM_RSMEMBERSHIP_RECAPTCHA_PRIVATE_KEY_DESC" label="COM_RSMEMBERSHIP_RECAPTCHA_PRIVATE_KEY" size="70" />
+		<field name="recaptcha_theme" type="list" default="red" class="btn-group rsme_recaptcha_field" label="COM_RSMEMBERSHIP_RECAPTCHA_THEME" description="COM_RSMEMBERSHIP_RECAPTCHA_THEME_DESC">
+			<option value="red">COM_RSMEMBERSHIP_RECAPTCHA_THEME_RED</option>
+			<option	value="white">COM_RSMEMBERSHIP_RECAPTCHA_THEME_WHITE</option>
+			<option	value="blackglass">COM_RSMEMBERSHIP_RECAPTCHA_THEME_BLACKGLASS</option>
+			<option	value="clean">COM_RSMEMBERSHIP_RECAPTCHA_THEME_CLEAN</option>
+		</field>
+		<field type="spacer" name="recaptcha_new_spacer" class="text" label="COM_RSMEMBERSHIP_RECAPTCHA_NEW_SETTINGS" />
+		<field name="recaptcha_new_site_key" type="text" class="input-xlarge rsme_recaptcha_new_field" description="COM_RSMEMBERSHIP_RECAPTCHA_NEW_SITE_KEY_DESC" label="COM_RSMEMBERSHIP_RECAPTCHA_NEW_SITE_KEY" size="70" />
+		<field name="recaptcha_new_secret_key" type="text" class="input-xlarge rsme_recaptcha_new_field" description="COM_RSMEMBERSHIP_RECAPTCHA_NEW_SECRET_KEY_DESC" label="COM_RSMEMBERSHIP_RECAPTCHA_NEW_SECRET_KEY" size="70" />
+		<field name="recaptcha_new_theme" type="list" default="light" class="rsme_recaptcha_new_field" label="COM_RSMEMBERSHIP_RECAPTCHA_NEW_THEME" description="COM_RSMEMBERSHIP_RECAPTCHA_NEW_THEME_DESC">
+			<option value="light">COM_RSMEMBERSHIP_RECAPTCHA_NEW_THEME_LIGHT</option>
+			<option	value="dark">COM_RSMEMBERSHIP_RECAPTCHA_NEW_THEME_DARK</option>
+		</field>
+		<field name="recaptcha_new_type" type="list" default="image" class="rsme_recaptcha_new_field" label="COM_RSMEMBERSHIP_RECAPTCHA_NEW_TYPE" description="COM_RSMEMBERSHIP_RECAPTCHA_NEW_TYPE_DESC">
+			<option value="image">COM_RSMEMBERSHIP_RECAPTCHA_NEW_TYPE_IMAGE</option>
+			<option	value="audio">COM_RSMEMBERSHIP_RECAPTCHA_NEW_TYPE_AUDIO</option>
+		</field>
+	</fieldset>
+	<fieldset name="configuration-idev" label="COM_RSMEMBERSHIP_IDEV" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="idev_enable" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_IDEV_ENABLE" description="COM_RSMEMBERSHIP_IDEV_ENABLE_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="idev_url" type="idevurl" class="input-xlarge pull-left" description="COM_RSMEMBERSHIP_IDEV_URL_DESC" label="COM_RSMEMBERSHIP_IDEV_URL" size="150" />
+		<field name="idev_track_renewals" type="radio" default="0" class="btn-group" label="COM_RSMEMBERSHIP_IDEV_TRACK_RENEWALS" description="COM_RSMEMBERSHIP_IDEV_TRACK_RENEWALS_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="tabposition" type="hidden" label="" />
+	</fieldset>
+	<fieldset name="footer-email" label="COM_RSMEMBERSHIP_FOOTER_EMAIL">
+		<field name="footer_enable" type="radio" default="1" class="btn-group" label="COM_RSMEMBERSHIP_FOOTER_EMAIL_ENABLE" description="COM_RSMEMBERSHIP_FOOTER_EMAIL_DESC" labelclass="control-label">
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="footer_spacer" type="spacer" label="" />
+		<field name="footer_content" type="editor" class="inputbox" label="COM_RSMEMBERSHIP_FOOTER_EMAIL_CONTENT" description="COM_RSMEMBERSHIP_FOOTER_EMAIL_CONTENT_DESC" filter="JComponentHelper::filterText" buttons="true" width="90%" translate_default="true" />
+	</fieldset>
+	<fieldset name="updates" label="COM_RSMEMBERSHIP_UPDATES">
+		<field name="global_register_code" type="text" class="input-xxlarge" label="COM_RSMEMBERSHIP_LICENSE_CODE" description="COM_RSMEMBERSHIP_LICENSE_CODE_DESC" size="60" />
+	</fieldset>
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_rsmembership" section="component">
+			<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+			<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		</field>
+	</fieldset>
+</form>

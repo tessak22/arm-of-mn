@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="filter-report-type" label="COM_RSMEMBERSHIP_SELECT_REPORT" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="report" type="list" class="input-large" label="COM_RSMEMBERSHIP_SELECT_REPORT" default="report_1">
+			<option value="report_1">COM_RSMEMBERSHIP_REPORT_1</option>
+			<option value="report_2">COM_RSMEMBERSHIP_REPORT_2</option>
+			<option value="report_3">COM_RSMEMBERSHIP_REPORT_3</option>
+		</field>
+	</fieldset>
+	<fieldset name="filter-time" label="COM_RSMEMBERSHIP_FILTER_PERIOD" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+
+		<field name="from_date" type="calendar" class="input-medium" label="COM_RSMEMBERSHIP_REPORT_FROM" size="25" />
+
+		<field name="to_date" type="calendar" class="input-medium" label="COM_RSMEMBERSHIP_REPORT_TO" size="25" />
+
+		<field name="unit" type="list" class="input-large" label="COM_RSMEMBERSHIP_REPORT_UNIT" default="day">
+			<option value="day">COM_RSMEMBERSHIP_DAY</option>
+			<option value="month">COM_RSMEMBERSHIP_MONTH</option>
+			<option value="quarter">COM_RSMEMBERSHIP_QUARTER</option>
+			<option value="year">COM_RSMEMBERSHIP_YEAR</option>
+		</field>
+	</fieldset>
+	<fieldset name="filter-user" label="COM_RSMEMBERSHIP_REPORTS_CUSTOMER" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="user_id" type="user" class="input-medium" label="COM_RSMEMBERSHIP_REPORTS_CUSTOMER" />
+	</fieldset>
+	<fieldset name="filter-memberships" label="COM_RSMEMBERSHIP_REPORTS_MEMBERSHIP" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="memberships" type="memberships" label="COM_RSMEMBERSHIP_REPORTS_MEMBERSHIP" multiple="multiple" size="6" default="all" />
+	</fieldset>
+	<fieldset name="filter-status" label="COM_RSMEMBERSHIP_REPORTS_STATUS" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="status_memberships" type="checkboxes" class="input-large" label="COM_RSMEMBERSHIP_REPORTS_STATUS" multiple="multiple" default="0,1,2,3" >
+			<option value="0">COM_RSMEMBERSHIP_STATUS_0</option>
+			<option value="1">COM_RSMEMBERSHIP_STATUS_1</option>
+			<option value="2">COM_RSMEMBERSHIP_STATUS_2</option>
+			<option value="3">COM_RSMEMBERSHIP_STATUS_3</option>
+		</field>
+
+		<field name="status_transactions" type="checkboxes" class="input-large" label="COM_RSMEMBERSHIP_REPORTS_STATUS" multiple="multiple" default="pending, completed, denied">
+			<option value="pending">COM_RSMEMBERSHIP_TRANSACTION_STATUS_PENDING</option>
+			<option value="completed">COM_RSMEMBERSHIP_TRANSACTION_STATUS_COMPLETED</option>
+			<option value="denied">COM_RSMEMBERSHIP_TRANSACTION_STATUS_DENIED</option>
+		</field>
+	</fieldset>
+	<fieldset name="filter-price" label="COM_RSMEMBERSHIP_FILTER_PRICE_RANGE" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+		<field name="price_from" type="text" label="COM_RSMEMBERSHIP_PRICE_FROM" />
+
+		<field name="price_to" type="text" label="COM_RSMEMBERSHIP_PRICE_TO" />
+	</fieldset>
+	<fieldset name="filter-transactions" label="COM_RSMEMBERSHIP_REPORTS_TRANSACTION_TYPES" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+	
+		<field name="transaction_types" type="list" class="input-large" label="COM_RSMEMBERSHIP_REPORTS_TRANSACTION_TYPES" multiple="multiple" >
+			<option value="new">COM_RSMEMBERSHIP_TRANSACTION_NEW</option>
+			<option value="upgrade">COM_RSMEMBERSHIP_TRANSACTION_UPGRADE</option>
+			<option value="addextra">COM_RSMEMBERSHIP_TRANSACTION_ADDEXTRA</option>
+			<option value="renew">COM_RSMEMBERSHIP_TRANSACTION_RENEW</option>
+		</field>
+
+		<field name="gateways" type="sql" class="input-large" label="COM_RSMEMBERSHIP_REPORTS_GATEWAY" query="SELECT DISTINCT gateway FROM #__rsmembership_transactions Order By `gateway` ASC" key_field="gateway" value_field="gateway" multiple="multiple" />
+
+	</fieldset>
+</form>
