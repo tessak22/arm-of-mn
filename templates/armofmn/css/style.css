@@ -357,3 +357,4 @@ background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
 /*Search before Member List categories*/
 .after-content form.form-inline .search:after {display: none;}
 .search-members .control-group {float: left;}
+.search-members .control-group .controls button.btn {margin-left: 10px;}
