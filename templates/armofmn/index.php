@@ -117,8 +117,8 @@ else
     <!--End of Only Content Boxes-->
 
     <!--Start of Content Area-->
-    <div class="page-title">
-      <jdoc:include type="modules" name="interior-banners" style="none" />
+    <div class="page-title randbg">
+      <!--<jdoc:include type="modules" name="interior-banners" style="none" />-->
       <div class="container">
         <h1><?php $mydoc =& JFactory::getDocument(); $mytitle = $mydoc->getTitle(); echo $mytitle; ?></h1>
       </div>

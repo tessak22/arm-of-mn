@@ -318,3 +318,21 @@ input#modlgn-passwd {margin-left: 5px;}
 input#modlgn-remember {float: left;}
 #form-login-remember label {padding-left: 5px;}
 #login-form ul.unstyled {list-style-type: none; padding-left: 0; margin-top: 20px;}
+
+/*Random Image*/
+.randbg {
+background: url('../../images/interior-banners/interior-banner-1.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.randbg.bg1 {
+background-image: url('../images/1.jpg');
+}
+.randbg.bg2 {
+background-image: url('../images/2.jpg');
+}
+.randbg.bg3 {
+background-image: url('../images/3.jpg');
+}
