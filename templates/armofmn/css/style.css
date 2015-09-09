@@ -235,7 +235,7 @@ body.featured-projects ul.pagenav li.previous a:before {content: "\f137"; font-f
 
 /*Upcoming Events*/
 body.events-page .main-content img {border-radius: 50%; float: left; margin-right: 30px; max-width: 100%; height: auto;}
-body.events-page .main-content .event-image {width: 25%;}
+body.events-page .main-content .event-image {width: 18%;}
 body.events-page .main-content .event-text {width: 70%; float: left;}
 body.events-page .main-content .event-text h2 {margin-bottom: 10px; margin-top: 0;}
 body.events-page .main-content .event-text p {margin-top: 0; margin-bottom: 5px; padding: 0; line-height: 25px;}
