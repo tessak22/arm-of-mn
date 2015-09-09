@@ -90,8 +90,10 @@ else
         </div>
       </div><!--.container-->
       <div class="responsive-only">
-        <div class="site-search">
-          <jdoc:include type="modules" name="search" style="none" />
+        <div class="container">
+          <div class="site-search">
+            <jdoc:include type="modules" name="search" style="none" />
+          </div>
         </div>
       </div>
       <div class="menu-bar">
