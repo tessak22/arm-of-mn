@@ -23,8 +23,6 @@
 	.slider-area {background: #fff url("../images/homepage-slider-bg.jpg") no-repeat; height: 100%;}
 	.dropdown-menu:before {display: none;}
 	.homepage-slide {height: 470px;}
-	.page-title .random-image {display: none;}
-	.page-title {background: #a7a095;}
 	.sidebar .custom.bye-bye-potholes, .sidebar .custom.associate-ad, .sidebar > .upcoming-events-sidebar {box-shadow: none;}
 }
 
