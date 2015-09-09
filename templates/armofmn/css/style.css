@@ -375,3 +375,6 @@ background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
 }
+
+/*Responsive Only rules*/
+.responsive-only {display: none;}

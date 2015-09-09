@@ -89,6 +89,11 @@ else
             <jdoc:include type="modules" name="featured-project" style="none" />
         </div>
       </div><!--.container-->
+      <div class="responsive-only">
+        <div class="site-search">
+          <jdoc:include type="modules" name="search" style="none" />
+        </div>
+      </div>
       <div class="menu-bar">
         <div class="container">
           <jdoc:include type="modules" name="menu-bar" style="none" />
