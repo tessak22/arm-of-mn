@@ -330,11 +330,26 @@ width: 100%;
 height: auto;
 }
 .randbg.bg1 {
-background-image: url('../images/1.jpg');
+background-image: url('../../../images/interior-banners/interior-banner-2.jpg');
 }
 .randbg.bg2 {
-background-image: url('../images/2.jpg');
+background-image: url('../../../images/interior-banners/interior-banner-3.jpg');
 }
 .randbg.bg3 {
-background-image: url('../images/3.jpg');
+background-image: url('../../../images/interior-banners/interior-banner-4.jpg');
+}
+.randbg.bg4 {
+background-image: url('../../../images/interior-banners/interior-banner-5.jpg');
+}
+.randbg.bg5 {
+background-image: url('../../../images/interior-banners/interior-banner-6.jpg');
+}
+.randbg.bg6 {
+background-image: url('../../../images/interior-banners/interior-banner-7.jpg');
+}
+.randbg.bg7 {
+background-image: url('../../../images/interior-banners/interior-banner-8.jpg');
+}
+.randbg.bg8 {
+background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
 }
