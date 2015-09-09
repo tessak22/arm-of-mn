@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSMEMBERSHIP_SINGLE_MEMBERSHIP_LAYOUT">
+		<message>
+			<![CDATA[COM_RSMEMBERSHIP_SINGLE_MEMBERSHIP_LAYOUT]]>
+		</message>
+	</layout>
+	<config>
+		<fields name="request">
+			<fieldset name="request" addfieldpath="/administrator/components/com_rsmembership/models/fields">
+				<field name="cid" type="memberships" class="input-large" label="COM_RSMEMBERSHIP_VIEW_SELECT_MEMBERSHIP" description="COM_RSMEMBERSHIP_VIEW_SELECT_MEMBERSHIP_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSMEMBERSHIP_DEFAULT_LAYOUT">
+		<message>
+			<![CDATA[COM_RSMEMBERSHIP_DEFAULT_LAYOUT]]>
+		</message>
+	</layout>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_rsmembership/fields">
+				<field name="columns_no" type="list" default="2" label="COM_RSMEMBERSHIP_SHOW_MEMBERSHIPS_IN" description="COM_RSMEMBERSHIP_SHOW_MEMBERSHIPS_IN_DESC">
+					<option value="1">COM_RSMEMBERSHIP_1_COLUMN</option>
+					<option value="2">COM_RSMEMBERSHIP_2_COLUMNS</option>
+					<option value="3">COM_RSMEMBERSHIP_3_COLUMNS</option>
+				</field>
+				<field name="show_buttons" type="list" default="2" label="COM_RSMEMBERSHIP_SHOW_BUTTONS" description="COM_RSMEMBERSHIP_SHOW_BUTTONS_DESC">
+					<option value="1">COM_RSMEMBERSHIP_DETAILS</option>
+					<option value="2">COM_RSMEMBERSHIP_DETAILS_COM_RSMEMBERSHIP_SUBSCRIBE</option>
+					<option value="3">COM_RSMEMBERSHIP_SUBSCRIBE</option>
+				</field>
+				<field name="categories" type="sql" default="" multiple="multiple" label="COM_RSMEMBERSHIP_SHOW_FROM_CATEGORIES" description="COM_RSMEMBERSHIP_SHOW_FROM_CATEGORIES_DESC" />
+				
+				<field name="categories" type="sql" multiple="multiple" class="input-large" label="COM_RSMEMBERSHIP_SHOW_FROM_CATEGORIES" description="COM_RSMEMBERSHIP_SHOW_FROM_CATEGORIES_DESC"  query="SELECT id, name FROM #__rsmembership_categories" key_field="id" value_field="name" />
+				
+				<field name="show_category" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_SHOW_CATEGORY" description="COM_RSMEMBERSHIP_SHOW_CATEGORY_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_pagination" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_PAGINATION" description="COM_RSMEMBERSHIP_PAGINATION_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="orderby" type="list" default="" label="COM_RSMEMBERSHIP_ORDER" description="COM_RSMEMBERSHIP_ORDER_DESC">
+					<option value="">COM_RSMEMBERSHIP_DEFAULT</option>
+					<option value="name">COM_RSMEMBERSHIP_TITLE</option>
+					<option value="price">COM_RSMEMBERSHIP_PRICE</option>
+				</field>
+				<field name="orderdir" type="radio" class="btn-group" default="ASC" label="COM_RSMEMBERSHIP_DIRECTION" description="COM_RSMEMBERSHIP_DIRECTION_DESC">
+					<option value="ASC">COM_RSMEMBERSHIP_ASCENDENT</option>
+					<option value="DESC">COM_RSMEMBERSHIP_DESCENDENT</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

@@ -1,0 +1,236 @@
+img.rsm_thumb
+{
+	float: left;
+	margin: 1% 2% 1% 0 !important;
+}
+
+.rsm_clear
+{
+	display: block;
+	clear: both;
+	height: 1%;
+	font-size: 1%;
+	line-height: 1%;
+}
+
+h2.rsm_title
+{
+	font-size: 150% !important;
+	display:block;
+}
+h2.rsm_title small {
+	display:block;
+	margin-top:10px;
+}
+
+#rsm_suggestions
+{
+	background: #F5FAF9;
+	border: solid 1px #A2BDCD;
+	padding: 7px;
+	margin-top: 7px;
+	float: left;
+}
+
+#rsm_suggestions ol
+{
+	margin: 0;
+	padding: 0;
+	padding-left: 18px;
+}
+
+#rsm_suggestions ol li
+{
+	padding: 0;
+	margin: 0;
+}
+
+#rsm_username_message
+{
+	padding: 4px;
+	margin-top: 7px;
+	float: left;
+}
+
+.rsm_error
+{
+	border: solid 1px #EB3B00 !important;
+	color: #EB3B00 !important;
+	background: #FFEFEB !important;
+	
+}
+
+.rsm_field_error
+{
+	border: solid 1px #EB3B00 !important;
+}
+
+.rsm_modal_error
+{
+	border-bottom: 2px solid #ed2025;
+	border-top: 2px solid #ed2025;
+	background: #ffc9ca url(../images/error.png) no-repeat 8px center;
+	color: #b91217;
+	font-weight: bold;
+	padding: 8px 0 8px 40px;
+	margin: 10px 0;
+}
+
+.rsm_modal_error_container
+{
+	font-size: 12px;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.rsm_ok
+{
+	border: solid 1px #009E28;
+	color: #009E28;
+	background: #F1FFEB;
+}
+
+.membershiptable {
+	border-collapse: collapse;
+	margin-bottom: 1.5em;
+	width: 99%;
+}
+
+.membershiptable {
+	border: 0px;
+	border-top: 2px solid #cccccc;
+	border-left: 1px solid #cccccc;
+	}
+	
+.membershiptable td {
+	border: 0px;
+	padding: 7px;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	}
+	
+.membershiptable th {
+	border: 0px;
+	padding: 7px;
+	border-bottom: 1px solid #cccccc;
+	border-right: 1px solid #cccccc;
+	background: #f7f7f7;
+	color: #006db9;
+	}
+	
+.rsmembership_form input.rsm_textbox {
+	font-size: 12px;
+	padding: 8px 6px;
+	background: #fff url(../images/formbg.gif) repeat-x left top;
+	border: 1px solid #e5e5e5;
+	float: left:
+	}
+	
+.rsmembership_form select {
+	width: 324px;
+	font-size: 12px;
+	background: #fff url(../images/formbg.gif) repeat-x left top;
+	border: 1px solid #e5e5e5;
+	float: left:
+	}
+	
+.rsmembership_form textarea {
+	width: 324px;
+	height: 140px;
+	font-size: 12px;
+	padding: 8px 6px;
+	background: #fff url(../images/formbg.gif) repeat-x left top;
+	border: 1px solid #e5e5e5;
+	float: left:
+	}
+	
+.rsmembership_form table.rsmembership_form_table,
+.rsmembership_form table.rsmembership_form_table tr,
+.rsmembership_form table.rsmembership_form_table tr td,
+.rsmembership_show_table,
+.rsmembership_show_table tr,
+.rsmembership_show_table tr td
+ {
+	border: 0px;
+}
+.rsmembership_show_table tr td {
+	border-bottom: 1px solid #EEEEEE;
+}
+	
+.rsmembership_form fieldset {
+	 border: 1px solid #e5e5e5;
+	 width: 98%;
+	 padding: 1%;
+	 margin-bottom: 20px;
+	 background: url(../images/contentbg.gif) repeat-x left top;
+	}
+	
+.rsmembership_form legend {
+	font-weight: bold;
+	color: #006db9;
+	padding: 0 10px;
+	}
+
+.rsm_container a.rsm_details {
+	width: 121px;
+	height: 26px;
+	background: url(../images/pricebg.gif) repeat-x left center;
+	color: white;
+	text-align: center;
+	border: none;
+	margin-left: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	line-height: 26px;
+	float: left;
+}
+
+.rsm_container a.rsm_button {
+	width: 121px;
+	height: 26px;
+	background: url(../images/subscribebg.gif) repeat-x left center;
+	color: white;
+	text-align: center;
+	border: none;
+	margin-left: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	line-height: 26px;
+	float: left;
+}
+
+.span12 .thumbnail .rsm_fixed_height {
+	min-height:200px !important;
+}
+.span6 .thumbnail .rsm_fixed_height {
+	min-height:300px !important;
+}
+.span4 .thumbnail .rsm_fixed_height {
+	min-height:400px !important;
+}
+
+.rsm_extra { margin:2px 5px !important; }
+#rsm_checkbox_agree { margin:2px 5px !important; }
+.rsme_faded {color:#8F8F8F;margin:0 5px; }
+.rsme_vcenter { display:inline-block; vertical-align:middle; }
+.rsme_extra_btn { margin:5px 5px 5px 0px!important; }
+#rsm_terms_frame {
+	height: 200px;
+	border: solid 1px #c7c7c7;
+	width: 100%;
+	overflow: auto;
+}
+
+#rsm_terms_frame #rsm_terms_container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.rsm-margin-chradio {
+	margin-right:5px !important;
+}

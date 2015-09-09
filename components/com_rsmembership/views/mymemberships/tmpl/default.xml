@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSMEMBERSHIP_SHOW_SUBSCRIBER_MEMBERSHIPS_LAYOUT">
+		<message>
+			<![CDATA[COM_RSMEMBERSHIP_SHOW_SUBSCRIBER_MEMBERSHIPS_LAYOUT]]>
+		</message>
+	</layout>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="show_headings" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_SHOW_HEADINGS" description="COM_RSMEMBERSHIP_SHOW_HEADINGS_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_pagination" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_PAGINATION" description="COM_RSMEMBERSHIP_PAGINATION_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_price" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_PRICE" description="COM_RSMEMBERSHIP_SHOW_PRICE">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_status" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_STATUS" description="COM_RSMEMBERSHIP_SHOW_STATUS">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_expire" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_START_EXPIRE_DATE" description="COM_RSMEMBERSHIP_START_EXPIRE_DATE_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+				<field name="show_cancel_subscription" type="radio" class="btn-group" default="1" label="COM_RSMEMBERSHIP_CANCEL_SUBSCRIPTION" description="COM_RSMEMBERSHIP_CANCEL_SUBSCRIPTION_DESC">
+					<option value="0">COM_RSMEMBERSHIP_HIDE</option>
+					<option value="1">COM_RSMEMBERSHIP_SHOW</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

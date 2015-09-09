@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_RSMEMBERSHIP_TERM_LAYOUT">
+		<message>
+			<![CDATA[COM_RSMEMBERSHIP_TERM_LAYOUT]]>
+		</message>
+	</layout>
+	<config>
+		<fields name="request">
+			<fieldset name="request" addfieldpath="/administrator/components/com_rsmembership/fields">
+				<field name="cid" type="sql" class="input-large" label="COM_RSMEMBERSHIP_VIEW_SELECT_TERMS" description="COM_RSMEMBERSHIP_VIEW_SELECT_TERMS_DESC"  query="SELECT id, name FROM #__rsmembership_terms" key_field="id" value_field="name" />
+			</fieldset>
+		</fields>
+	</config>
+</metadata>

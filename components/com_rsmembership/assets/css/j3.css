@@ -1,0 +1,10 @@
+.rsmembershiptable tr td, .rsmembershiptable {border-left:none !important;border-right:none !important;}
+.page-header { border:none !important; }
+#rsme_upgrade_box label {margin:0px 4px 0px 0px;}
+#rsme_upgrade_box select {margin:0px 4px 0px 0px;}
+#rsme_upgrade_box input.btn {margin:0px 0px 0px 0px;}
+#rsme_renewal_price { font-size : 14px; margin:0px 4px 0px 0px;}
+#rsme_membership_info .row-fluid {padding : 20px 0px !important; border-bottom:1px solid #DDDDDD;}
+
+#rsm_mymembership_container div h1 { color: #333333;border-bottom:4px double #DDDDDD; font-size:24px; padding-bottom:10px;}
+.rsme_extra_container, .rsme_extrab_container { margin:50px 0px !important;	}

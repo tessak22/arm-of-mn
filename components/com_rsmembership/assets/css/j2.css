@@ -1,0 +1,90 @@
+.item-page{
+	max-width:98% !important; 
+}
+
+.thumbnail{
+	margin:1%;
+}
+#main  .btn { 
+	color: #333333 !important;
+}
+#main  .btn:hover, .btn-group .btn:focus, .btn-group .btn:active, .btn-group .btn.active, .btn-group .btn.disabled, .btn-group .btn[disabled] {
+	background-color:#E6E6E6 !important;
+	background-position: 0 -15px !important;
+    color: #333333 !important;
+    text-decoration: none !important;
+    transition: background-position 0.1s linear 0s !important;
+}
+#main  .btn-success, #main  .btn-warning, #main  .btn-danger , #main  .btn-info 
+{
+	color:#ffffff !important; 
+}
+#main  .btn-info 
+{
+    background-color: #49AFCD;
+    background-image: linear-gradient(to bottom, #5BC0DE, #2F96B4);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+#main  .btn-success 
+{
+	background-color: #5BB75B;
+    background-image: linear-gradient(to bottom, #62C462, #51A351);
+    background-repeat: repeat-x;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#main  .btn-warning 
+{
+	background-color: #FAA732;
+    background-image: linear-gradient(to bottom, #FBB450, #F89406);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+#main  .btn-error 
+{
+	background-color: #DA4F49;
+    background-image: linear-gradient(to bottom, #EE5F5B, #BD362F);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+#main  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
+    background-color: #2F96B4 !important;
+    color: #FFFFFF !important;
+}
+
+#main  .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
+    background-color: #51A351 !important;
+    color: #FFFFFF !important;
+}
+
+#main  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+    background-color: #F89406 !important;
+    color: #FFFFFF !important;
+}
+
+#main  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
+    background-color: #BD362F !important;
+    color: #FFFFFF !important;
+}
+
+.page-header {
+	margin:0px !important;
+	border:none;
+}
+.rsmembershiptable tr td, .rsmembershiptable {border-left:none !important;border-right:none !important;}
+#rsme_upgrade_box label {margin:0px 4px 0px 0px;}
+#rsme_upgrade_box select {margin:0px 4px 0px 0px;}
+#rsme_upgrade_box input.btn {margin:0px 0px 0px 0px;}
+#rsme_renewal_price { font-size : 14px; margin:0px 4px 0px 0px;}
+#rsm_mymembership_container .row-fluid {margin : 20px 0px; }
+#rsme_membership_info .row-fluid {padding : 20px 0px; border-bottom:1px solid #DDDDDD;}
+
+#rsm_mymembership_container div h1 { color: #333333;border-bottom:4px double #DDDDDD; font-size:24px; padding-bottom:10px;}
+.rsmembership_form ul li {list-style:none;}
