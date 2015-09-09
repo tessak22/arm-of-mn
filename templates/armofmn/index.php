@@ -207,6 +207,12 @@ else
 	<script src="templates/<?php echo $this->template ?>/js/jquery.js"></script>
 	<script src="templates/<?php echo $this->template ?>/js/script.js"></script>
   <script src="templates/<?php echo $this->template ?>/js/rand-bg.js"></script>
+  <script>
+    $(".randbg").RandBG({
+      ClassPrefix: "bg",
+      count: 9
+    });
+  </script>
 	<!-- end scripts-->
 
 </body>
