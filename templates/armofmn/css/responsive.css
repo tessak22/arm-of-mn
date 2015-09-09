@@ -24,6 +24,8 @@
 	.dropdown-menu:before {display: none;}
 	.homepage-slide {height: 470px;}
 	.sidebar .custom.bye-bye-potholes, .sidebar .custom.associate-ad, .sidebar > .upcoming-events-sidebar {box-shadow: none;}
+	.menu-bar {background: rgba(0, 97, 79, 1); margin-top: 15px;}
+	.menu-bar .navbar-nav > li > a {padding: 6px 55px;}
 }
 
 @media only screen and (max-width: 767px) {
@@ -50,6 +52,7 @@
 	.alpha-index {display: none;}
 	.main-content td.map, .main-content td.contact-us-left {width: 100% !important;}
 	.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {margin-left: 0; float: left;}
+	.menu-bar .navbar-nav > li > a {padding: 6px 0; text-align: center; width: 100%;}
 }
 
 @media only screen and (max-width: 480px) {
@@ -59,7 +62,9 @@
 	.menu-bar .navbar-nav > li > a {float: none; text-align: center;}
 	.footer-features p.btn.btn-primary {width: 90%;}
 	.logos .col-sm-2 {width: 33%;}
-	.slider-area {display: none;}
+	.homepage-slide {display: none;}
+	.slider-area {background: #fff;}
+	.featured-project {display: none;}
 	.homepage-content {margin-top: 20px;}
 	.navbar-default .navbar-toggle {top: -45px;}
 }
