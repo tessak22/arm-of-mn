@@ -163,6 +163,8 @@ div.srfrContainer ul.srfrList li {padding: 0;}
 /*Footer Logos*/
 .logos {padding-top: 22px; padding-bottom: 22px; border-top: 3px solid #dededd; background: #fff;}
 .logos img {max-width: 100%; height: auto;}
+.footer-logos p img {padding-right: 15px;}
+.footer-logos p img:last-child {padding-right: 0px;}
 /*Footer*/
 .site-footer {background: #57534b; padding-top: 35px; padding-bottom: 35px; border-top: 3px solid #dededd;}
 .copyright {float: right;}
