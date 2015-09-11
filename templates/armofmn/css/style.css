@@ -380,3 +380,8 @@ background-image: url('../../../images/interior-banners/interior-banner-9.jpg');
 
 /*Responsive Only rules*/
 .responsive-only {display: none;}
+
+/*RSSearch Styling*/
+.rssearch_row {border-bottom: medium none; border-radius: 0; box-shadow: none;}
+.rssearch_row a.rssearch_readon {display: none;}
+
